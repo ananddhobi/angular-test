@@ -5,6 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
+              sh 'ng serve'
             }
         }
         stage('Test') {

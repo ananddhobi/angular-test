@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-              sh 'ng serve'
+              sh 'pm2 start "ng serve" --name angular-jenkins'
             }
         }
         stage('Test') {
